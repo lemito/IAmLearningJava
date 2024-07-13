@@ -13,11 +13,12 @@ public class Input {
         double gpa = console.nextDouble();
         System.out.println("Hello, " + name + ", your age = " + age + ", gpa = " + gpa);
 
-        String str = "19 4.87";
+        String str = "Mike 19 4.87";
         Scanner fromStr = new Scanner(str);
         fromStr.useLocale(Locale.US); 
+        String name_fromStr = fromStr.next();
         int age_fromStr = fromStr.nextInt();
         double gpa_fromStr = fromStr.nextDouble();
-        System.out.println(", your age = " + age_fromStr + ", gpa = " + gpa_fromStr);
+        System.out.println("Hello, " + name_fromStr + ", your age = " + age_fromStr + ", gpa = " + gpa_fromStr);
     }
 }
