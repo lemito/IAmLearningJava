@@ -8,7 +8,7 @@ public class Input {
 
         @SuppressWarnings("resource")
         Scanner console = new Scanner(System.in);
-        console.useLocale(Locale.US); 
+        console.useLocale(Locale.US);
         String name = console.nextLine();
         int age = console.nextInt();
         double gpa = console.nextDouble();
@@ -17,7 +17,7 @@ public class Input {
         String str = "Mike 19 4.87";
         @SuppressWarnings("resource")
         Scanner fromStr = new Scanner(str);
-        fromStr.useLocale(Locale.US); 
+        fromStr.useLocale(Locale.US);
         String name_fromStr = fromStr.next();
         int age_fromStr = fromStr.nextInt();
         double gpa_fromStr = fromStr.nextDouble();
