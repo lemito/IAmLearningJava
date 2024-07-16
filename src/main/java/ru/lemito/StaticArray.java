@@ -38,6 +38,7 @@ public class StaticArray {
         for (int j : meoww) {
             System.out.print(j + " ");
         }
+        sc.close();
     }
 }
 
