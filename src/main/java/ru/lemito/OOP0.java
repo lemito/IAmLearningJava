@@ -1,6 +1,14 @@
 package ru.lemito;
 
-class Car{
+import java.util.LinkedList;
+
+class Transport{
+    private int countSeats;
+    private String location;
+
+}
+
+class Car extends Transport{
     private String brand;
     private String color;
     private String type = "спорт кар";
@@ -93,6 +101,7 @@ class Car{
 
 public class OOP0 {
     public static void main(String[] args){
+        LinkedList<Car> park = new LinkedList<>();
         Car first = new Car();
         first.setBrand("Ferrari");
         first.setColor("Red");

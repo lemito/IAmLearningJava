@@ -1,5 +1,7 @@
 package ru.lemito;
 
+import java.util.LinkedList;
+
 /**
  * Интерфейсы - тоже приколюха аля .h -> #define для переменных и перечисление методов
  */
@@ -178,9 +180,14 @@ final class Human  extends Mammals implements IHuman{
 public class OOP1_Inheritance
 {
     public static void main(String[] args) {
+        LinkedList<Animal> zoo = new LinkedList<>();
         Human hu = new Human("Vova", "19", 60, "pink", 201);
         Birds parrot = new Birds("Poo", "1", 14, "yellow", 16);
-        hu.present();
-        parrot.present();
+        zoo.add(hu);
+        zoo.add(parrot);
+
+        for (Animal elem: zoo){
+            elem.present();
+        }
     }
 }
